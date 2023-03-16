@@ -18,6 +18,7 @@ body {
 }
 
 #titulo {
+    background-color: #d8d4d4;
     border-right: 2px solid #2c3b42;
 }
 
@@ -60,10 +61,13 @@ body {
 
 #temario h4 {
     color: #d8d4d4;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #temario h5 {
     color: #b8bdc1;
+    font-size: 16px;
 }
 
 #temario .tema {
@@ -72,12 +76,12 @@ body {
 }
 
 #temario .tema:hover {
-    background-color: #2B3942;
+    background-color: #2b7162;
     cursor: pointer;
 }
 
 #temario .selected {
-    background-color: #2B3942;
+    background-color: #2b7162;
 }
 
 ::-webkit-scrollbar {
@@ -118,6 +122,15 @@ body {
     margin-bottom: 30px;
 }
 
+#tema h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#tema h2 {
+    font-size: 24px;
+}
+
 #tema hr,
 #tema p,
 #tema ul,
@@ -127,7 +140,7 @@ body {
 }
 
 #tema hr {
-    background-color: #fff;
+    background-color: #00A884;
 }
 
 #tema p {

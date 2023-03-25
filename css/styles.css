@@ -65,6 +65,14 @@ body {
     font-weight: bold;
 }
 
+#temario .toggle-plus i {
+    font-size: 25px;
+}
+
+#inicio, #contenidos {
+    border-bottom: 1px solid #00A884;
+}
+
 #temario h5 {
     color: #b8bdc1;
     font-size: 16px;
@@ -85,7 +93,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
   
   /* Track */

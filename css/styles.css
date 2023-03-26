@@ -142,6 +142,7 @@ body {
 #tema hr,
 #tema p,
 #tema ul,
+#tema ol,
 #tema a {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -160,6 +161,11 @@ body {
     list-style: disc;
 }
 
+#tema ol {
+    margin-left: 50px;
+    list-style: lower-alpha;
+}
+
 #tema li {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -175,4 +181,9 @@ body {
     height: 12%;
     font-size: 12px;
     overflow-y: hidden;
+}
+
+.foto-contacto {
+    width: 200px;
+    border-radius: 20px;
 }

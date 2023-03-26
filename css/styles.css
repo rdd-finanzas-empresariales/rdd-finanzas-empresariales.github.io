@@ -22,36 +22,6 @@ body {
     border-right: 2px solid #2c3b42;
 }
 
-#boton-temas {
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-}
-
-.dropdown-menu {
-    background-color: #121b22;
-}
-
-.dropdown-menu a {
-    font-size: 25px;
-    color: #d8d4d4;
-    transition: all 300ms;
-}
-
-.dropdown-menu a:hover {
-    background-color: #2B3942;
-    color: #d8d4d4;
-}
-
-.dropdown-menu a {
-    font-size: 25px;
-    color: #d8d4d4;
-}
-
-.dropdown-menu {
-    transition: all 300ms ease !important;
-}
-
 #temario {
     background-color: #121b22;
     border-right: 2px solid #2c3b42;
@@ -61,7 +31,7 @@ body {
 
 #temario h4 {
     color: #d8d4d4;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -75,7 +45,7 @@ body {
 
 #temario h5 {
     color: #b8bdc1;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #temario .tema {
@@ -121,6 +91,7 @@ body {
 #tema {
     height: 88%;
     overflow-y: auto;
+    font-size: 18px;
 }
 
 #tema h1,
@@ -132,11 +103,11 @@ body {
 
 #tema h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 #tema h2 {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 #tema hr,

@@ -13,7 +13,7 @@ body {
 
 #titulo, #subtitulo {
     background-color: #1f2c34;
-    color: #d8d4d4;
+    color: #b8bdc1;
     height: 15vh;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 #temario h4 {
-    color: #d8d4d4;
+    color: #b8bdc1;
     font-size: 22px;
     font-weight: bold;
 }
@@ -88,12 +88,13 @@ body {
 #principal {
     background-color: #0B141B;
     overflow-y: auto;
-    color: #d8d4d4;
+    color: #b8bdc1;
     height: 85vh;
 }
 
 #tema {
     height: 88%;
+    color: #b8bdc1;
     overflow-y: auto;
     font-size: 18px;
 }
@@ -101,6 +102,7 @@ body {
 #tema h1,
 #tema h2,
 #tema table {
+    color: #b8bdc1;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -118,7 +120,8 @@ body {
 #tema p,
 #tema ul,
 #tema ol,
-#tema a {
+#tema a,
+#evaluacion .opcion {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -172,7 +175,7 @@ body {
 #buscador input[type=text] {
     background-color: transparent;
     border-color: transparent;
-    color: #d8d4d4;
+    color: #b8bdc1;
     padding-left: 20px;
     font-size: 18px;
 }
@@ -187,4 +190,47 @@ body {
 .encontrado {
     font-weight: bold;
     color: #00A884;
+}
+
+#evaluacion .opcion {
+    border: 1px solid #1F2C34 !important;
+    border-radius: 10px;
+    text-align: justify;    
+}
+
+#evaluacion .opcion:hover {
+    cursor: pointer;
+    background-color: #1F2C34;
+}
+
+#evaluacion .seleccionada {
+    background-color: #1F2C34;
+}
+
+#evaluacion .pregunta.correcta .opcion.seleccionada {
+    border: 1px solid #00A884 !important;
+    color: #00A884;
+    background-color: transparent !important;
+    border-radius: 10px;
+}
+
+#evaluacion .pregunta.incorrecta .opcion.seleccionada {
+    border: 1px solid #F15C6D !important;
+    color: #F15C6D;
+    background-color: transparent !important;
+    border-radius: 10px;
+}
+
+#evaluacion .pregunta.incorrecta .opcion.opcionCorrecta {
+    border: 1px solid #00A884 !important;
+    background-color: #00A884;
+    border-radius: 10px;
+}
+
+#evaluacion .pregunta .palomita {
+    color: #00A884;
+}
+
+#evaluacion .pregunta .tache {
+    color: #F15C6D;
 }

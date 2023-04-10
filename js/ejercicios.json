@@ -1,0 +1,196 @@
+[
+    {
+        "numPregunta": 1,
+        "pregunta": "Área de la empresa que se enfoca en el manejo de los recursos financieros.",
+        "opciones": [
+            "Contraloría",
+            "Contabilidad",
+            "Tesorería"
+        ],
+        "respuesta": "3"
+    },
+    {
+        "numPregunta": 2,
+        "pregunta": "Área de la empresa responsable de la actividad contable, planeación, presupuestos y auditoría interna, entre otras.",
+        "opciones": [
+            "Contraloría",
+            "Contabilidad",
+            "Tesorería"
+        ],
+        "respuesta": "1"
+    },
+    {
+        "numPregunta": 3,
+        "pregunta": "Área de una empresa que tiene como funciones obtener y dirigir la asignación eficiente de fondos dentro de la organización.",
+        "opciones": [
+            "Finanzas",
+            "Tesorería",
+            "Contraloría"
+        ],
+        "respuesta": "1"
+    },
+    {
+        "numPregunta": 4,
+        "pregunta": "Sociedades en las que cada socio goza de un voto, sin importar el monto de su aportación.",
+        "opciones": [
+            "Sociedad cooperativa y sociedad anónima",
+            "Asociación civil, sociedad civil y sociedad cooperativa",
+            "Sociedad de responsabilidad limitada y asociación civil"
+        ],
+        "respuesta": "2"
+    },
+    {
+        "numPregunta": 5,
+        "pregunta": "Sociedades en las que el rumbo de la empresa (toma de decisiones) será definido en función del capital aportado",
+        "opciones": [
+            "Sociedad civil (S.C) y sociedad de responsabilidad limitada (S. de R.L)",
+            "Asociación civil (A.C) y sociedad civil (S.C)",
+            "Sociedad de responsabilidad limitada (S. de R.L) y sociedad anónima (S.A)"
+        ],
+        "respuesta": "3"
+    },
+    {
+        "numPregunta": 6,
+        "pregunta": "Una de sus principales funciones es llevar el flujo de efectivo de la empresa",
+        "opciones": [
+            "Contabilidad",
+            "Tesorería",
+            "Contraloría"
+        ],
+        "respuesta": "2"
+    },
+    {
+        "numPregunta": 7,
+        "pregunta": "Sus principales actividades son el financiamiento y la inversión",
+        "opciones": [
+            "Finanzas",
+            "Contabilidad",
+            "Finanzas"
+        ],
+        "respuesta": "1"
+    },
+    {
+        "numPregunta": 8,
+        "pregunta": "Son sociedades que no tributan",
+        "opciones": [
+            "Asociación civil (A.C) sin finalidad económica y Sociedad cooperativa de consumo",
+            "Todas las asociaciones civiles y las sociedades cooperativas",
+            "La Asociación civil y las sociedades cooperativas"
+        ],
+        "respuesta": "1"
+    },
+    {
+        "numPregunta": 9,
+        "pregunta": "Sociedad que no requiere solicitar acta constitutiva ante un fedatario público y se constituye bajo los estatutos de la Secretaría de Economía mediante el sistema electrónico de constitución",
+        "opciones": [
+            "Asociación civil (A.C)",
+            "Sociedad civil",
+            "Sociedad por acciones simplificada (S.A.S)"
+        ],
+        "respuesta": "3"
+    },
+    {
+        "numPregunta": 10,
+        "pregunta": "De acuerdo con el SAT es el Individuo con capacidad para contraer obligaciones y ejercer derechos; puede prestar servicios, realizar actividades comerciales, arrendar bienes inmuebles y trabajar por salarios.",
+        "opciones": [
+            "Persona moral",
+            "Persona física",
+            "Empleador y empleado"
+        ],
+        "respuesta": "2"
+    },
+    {
+        "numPregunta": 11,
+        "pregunta": "Toda empresa es una organización",
+        "opciones": [
+            "Verdadero",
+            "Falso"
+        ],
+        "respuesta": "1"
+    },
+    {
+        "numPregunta": 12,
+        "pregunta": "Toda organización es una empresa",
+        "opciones": [
+            "Verdadero",
+            "Falso"
+        ],
+        "respuesta": "2"
+    },
+    {
+        "numPregunta": 13,
+        "pregunta": "Toda empresa es una organización",
+        "opciones": [
+            "Falso",
+            "Verdadero"
+        ],
+        "respuesta": "2"
+    },
+    {
+        "numPregunta": 14,
+        "pregunta": "Corresponde a la obtención de recursos mediante diferentes fuentes; por ejemplo: compras a crédito, préstamos de la banca de primer piso, préstamos de la banca se segundo piso, préstamo de los socios, crowdfunding, entre otras.",
+        "opciones": [
+            "Actividades de financiamiento",
+            "Actividades de inversión"
+        ],
+        "respuesta": "1"
+    },
+    {
+        "numPregunta": 15,
+        "pregunta": "La compra de maquinaria y equipo, la compra o ampliación de una planta productiva y las mejoras en el proceso productivo, son consideradas:",
+        "opciones": [
+            "Actividades de inversión",
+            "Actividades de financiamiento"
+        ],
+        "respuesta": "1"
+    },
+    {
+        "numPregunta": 16,
+        "pregunta": "En 2021 hubo una reforma, en el esquema laboral, que prohíbe la subcontratación de personal (outsourcing). Dicha reforma, se considera un factor del:",
+        "opciones": [
+            "Microentorno o microambiente",
+            "Macroentorno o macroambiente"
+        ],
+        "respuesta": "2"
+    },
+    {
+        "numPregunta": 17,
+        "pregunta": "Son considerados elementos del microambiente o microentorno",
+        "opciones": [
+            "Factores político-legales, económicos, medio ambientales",
+            "Demográficos, tecnológicos y socio-culturales",
+            "Proveedores, clientes, comunidad, alcaldías o municipios"
+        ],
+        "respuesta": "3"
+    },
+    {
+        "numPregunta": 18,
+        "pregunta": "Son consideradas como las dos funciones o actividades principales de las finanzas",
+        "opciones": [
+            "Planeación y control",
+            "Planeación y organización",
+            "Inversión y financiamiento"
+        ],
+        "respuesta": "3"
+    },
+    {
+        "numPregunta": 19,
+        "pregunta": "De acuerdo con las NIF es el nombre que reciben las entidades que venden a las empresas bienes (materia prima, equipo de cómputo, mobiliario y equipo de oficina) o prestan servicios (de internet, de mantenimiento y de servicios de facturación electrónica, entre otros).",
+        "opciones": [
+            "Acreedores",
+            "Proveedores",
+            "Vendedores"
+        ],
+        "respuesta": "2"
+    },
+    {
+        "numPregunta": 20,
+        "pregunta": "Nombre que reciben quienes compran bienes o adquieren servicios de la empresa.",
+        "opciones": [
+            "Clientes",
+            "Proveedores",
+            "Vendedores"
+        ],
+        "respuesta": "1"
+    }
+]

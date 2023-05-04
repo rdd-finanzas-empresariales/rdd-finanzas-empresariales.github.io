@@ -248,3 +248,11 @@ body {
 #evaluacion .pregunta .tache {
     color: #F15C6D;
 }
+
+@media(max-width: 1000px) {
+
+    body {
+        background-color: red !important;
+    }
+
+}

@@ -15,6 +15,27 @@ $(document).ready(function() {
 
             $("#evaluacion").html("");
 
+            $("#evaluacion").append(`
+                <div class="row">
+                    <div class="col-8">
+                        <div id="buscador">
+                            <input id="nombreCompleto" class="form-control" type="text" placeholder="Ingresa tu nombre completo" />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div id="buscador">
+                            <input id="grupo" class="form-control" type="text" placeholder="Ingresa tu grupo" />
+                        </div>
+                    </div>
+                </div>
+                <div id="divCalificacion" class="row d-none">
+                    <div class="col-4 offset-8">
+                        <h2 class="text-right mr-5">Calificación: <span id="calificacion"></span></h2>
+                    </div>
+                </div>
+                <hr />
+            `);
+
             ejercicios.forEach(function(ejercicio, index) {
 
                 var opciones = ``;
@@ -26,11 +47,11 @@ $(document).ready(function() {
                             <div class="col-11">
                                 ${opcion}
                             </div>
-                            <div class="col-1 align-self-center text-center palomita d-none">
+                            <div class="col-1 align-self-center text-center no-imprimir palomita d-none">
                                 <i class="fa-solid fa-check"></i>
                             </div>
                             <div class="col-1 align-self-center text-center tache d-none">
-                                <i class="fa-solid fa-xmark"></i>
+                                
                             </div>
                         </div>
                     `;
@@ -53,10 +74,15 @@ $(document).ready(function() {
 
             });
 
-            $("#evaluacion").append("<hr />");
+            $("#evaluacion").append("<hr class='no-imprimir' />");
 
             $("#evaluacion").append(`
-                <button onclick="calificar()" class="btn btn-primary d-block mx-auto mt-5">Verificar respuestas</button>
+                <div class="col-8 d-block mx-auto mt-4">
+                    <div class="row justify-content-around">
+                        <button onclick="calificar()" class="btn btn-primary no-imprimir">Verificar respuestas</button>
+                        <button id="botonImprimir" onclick="imprimirDiv()" class="btn btn-success d-none no-imprimir">Imprimir</button>
+                    </div>
+                </div>
             `);
             
         });
@@ -81,12 +107,15 @@ function calificar() {
 
     var preguntas = $("[id^='p-'").toArray();
 
+    var correctas = 0;
+
     preguntas.forEach(function(pregunta, index) {
 
         var respuestaSeleccionada = $(pregunta).find(".seleccionada").attr("id").split("-")[2];
         var respuestaCorrecta = ejercicios[index]["respuesta"];
 
         if(respuestaCorrecta == respuestaSeleccionada) {
+            correctas++;
             $(pregunta).addClass("correcta");
             $(pregunta).find(".seleccionada").find(".palomita").removeClass("d-none");
         } else {
@@ -97,6 +126,15 @@ function calificar() {
         }
 
     });
+
+    $("#tema #calificacion").text(correctas);
+
+    $("#divCalificacion").removeClass("d-none");
+    $("#botonImprimir").removeClass("d-none");
+
+    $('#tema').animate({
+        scrollTop: 0
+    }, 1000);
 
 }
 

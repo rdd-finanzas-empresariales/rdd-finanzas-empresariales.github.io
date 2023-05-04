@@ -9,6 +9,7 @@ html, body {
 
 body {
     background-color: #2c3b42;
+    overflow: hidden;
 }
 
 #titulo, #subtitulo {
@@ -92,27 +93,35 @@ body {
     height: 85vh;
 }
 
-#tema {
+#tema, #tema-escondido {
+    background-color: #0B141B;
     height: 88%;
     color: #b8bdc1;
     overflow-y: auto;
     font-size: 18px;
 }
 
+#tema-escondido {
+    height: auto;
+}
+
 #tema h1,
 #tema h2,
-#tema table {
+#tema table,
+#tema-escondido h1,
+#tema-escondido h2,
+#tema-escondido table {
     color: #b8bdc1;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-#tema h1 {
+#tema h1, #tema-escondido h1 {
     text-align: center;
     font-size: 32px;
 }
 
-#tema h2 {
+#tema h2, #tema-escondido h2 {
     font-size: 26px;
 }
 
@@ -121,36 +130,41 @@ body {
 #tema ul,
 #tema ol,
 #tema a,
+#tema-escondido hr,
+#tema-escondido p,
+#tema-escondido ul,
+#tema-escondido ol,
+#tema-escondido a,
 #evaluacion .opcion {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#tema hr {
-    background-color: #00A884;
+#tema hr, #tema-escondido hr {
+    background-color: #00A884 !important;
 }
 
-#tema p {
+#tema p, #tema-escondido p {
     text-align: justify;
 }
 
-#tema ul {
+#tema ul, #tema-escondido ul {
     margin-left: 50px;
     list-style: disc;
 }
 
-#tema ol {
+#tema ol, #tema-escondido ol {
     margin-left: 50px;
     list-style: lower-alpha;
 }
 
-#tema li {
+#tema li, #tema-escondido li {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: justify;
 }
 
-#tema a, #creative-commons a {
+#tema a, #tema-escondido a, #creative-commons a {
     color: #00A884;
 }
 

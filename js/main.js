@@ -239,7 +239,7 @@ $(document).ready(function() {
             $("#dragHamburguer").addClass("d-none");
             $("#dragCross").addClass("d-block");
             $("#dragCross").removeClass("d-none");
-            $("#menuDrop").css({"top": $("html").scrollTop() + 270 + "px"});
+            $("#menuDrop").css({"top": $("html").scrollTop() + 210 + "px"});
             // $('html, body, #principal, #tema, #contenido').css({
             //     "overflow-y": 'hidden',
             //     height: '100vh'

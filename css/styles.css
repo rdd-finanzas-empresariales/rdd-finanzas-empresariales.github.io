@@ -254,11 +254,18 @@ body {
     z-index: 9000 !important;
     cursor: default !important;
     position: absolute !important;
-    font-size: 70px;
-    width: 120px;
-    height: 120px;
+    font-size: 5vh;
+    width: 60px;
+    height: 60px;
     background-color: #2b7162;
     border-radius: 50%;
+}
+
+#menuDrag i {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
 }
 
 #menuDrop {

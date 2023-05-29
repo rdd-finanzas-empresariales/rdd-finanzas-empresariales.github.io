@@ -36,7 +36,13 @@ body {
 
 #temario h4, #temarioDrop h4 {
     color: #b8bdc1;
-    font-size: 22px;
+    font-size: 2vh !important;
+    font-weight: bold;
+}
+
+#temario h5, #temarioDrop h5 {
+    color: #b8bdc1;
+    font-size: 1.6vh !important;
     font-weight: bold;
 }
 
@@ -253,9 +259,9 @@ body {
     z-index: 9000 !important;
     cursor: default !important;
     position: absolute !important;
-    font-size: 40px;
-    width: 90px;
-    height: 90px;
+    font-size: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #2b7162;
     border-radius: 50%;
 }
@@ -263,8 +269,8 @@ body {
 #menuDrop {
     z-index: 9000 !important;
     width: 95%;
-    height: 70vh;
-    top: 290px;
+    height: 65vh;
+    top: 350px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -274,7 +280,11 @@ body {
     border: 1px solid #00A884;
 }
 
-@media(max-width: 1300px) {
+@media only screen and (min-width: 1px) and (max-width: 1300px) {
+
+    #imagenFinanzas {
+        min-width: 70%;
+    }
 
     #menuDrag {
         display: block !important;
@@ -382,17 +392,21 @@ body {
         overflow: hidden !important;
     }
 
+    #wrapperFechaCreative {
+        max-width: 100% !important;
+    }
+
     #fechaCreative, #logoCreative {
         text-align: center !important;
-        min-width: 1000px !important;
-        max-width: 1000px !important;
-        width: 1000px !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
     }
 
     #logoCreative img {
         margin-top: 10px !important;
         margin-bottom: 10px !important;
-        min-width: 200px !important;
+        min-width: 100px !important;
     }
 
     #wrapperContactos {
@@ -428,7 +442,7 @@ body {
 
 }
 
-@media(max-width: 1000px) {
+@media only screen and (min-width: 1px) and (max-width: 1000px) {
 
     .botonImagen {
         min-width: 35% !important;
@@ -441,18 +455,26 @@ body {
 
 }
 
-@media(max-width: 800px) {
+@media only screen and (min-width: 1px) and (max-width: 800px) {
 
     .botonImagen {
         min-width: 40% !important;
     }
 
+    #imagenFinanzas {
+        min-width: 90%;
+    }
+
 }
 
-@media(max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
     .botonImagen {
         min-width: 70% !important;
+    }
+
+    #imagenFinanzas {
+        min-width: 100%;
     }
 
 }

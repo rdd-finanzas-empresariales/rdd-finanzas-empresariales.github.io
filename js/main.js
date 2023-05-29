@@ -181,13 +181,13 @@ $(document).ready(function() {
 
     // Menu para celulares
 
-    var isDragging = false;
-    var actualDraggabletop;
-
     $("#menuDrag").css({
         "top": $("html").scrollTop() + 200 + "px",
         "right": "0px"
     });
+
+    var isDragging = false;
+    var actualDraggabletop = $("#menuDrag").css("top").replace("px", "");
 
     $(document.body).on('touchmove', onScroll);
     $(window).on('scroll', onScroll); 
@@ -239,10 +239,11 @@ $(document).ready(function() {
             $("#dragHamburguer").addClass("d-none");
             $("#dragCross").addClass("d-block");
             $("#dragCross").removeClass("d-none");
-            $('html, body, #principal, #tema, #contenido').css({
-                "overflow-y": 'hidden',
-                height: '100vh'
-            });
+            $("#menuDrop").css({"top": $("html").scrollTop() + 350 + "px"});
+            // $('html, body, #principal, #tema, #contenido').css({
+            //     "overflow-y": 'hidden',
+            //     height: '100vh'
+            // });
             $(this).draggable("disable");
             setTimeout(() => $("#menuDrop").slideDown(300), 300);
         }

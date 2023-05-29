@@ -47,16 +47,11 @@ body {
 }
 
 #temario .toggle-plus i, #temarioDrop .toggle-plus i {
-    font-size: 25px;
+    font-size: 2vh;
 }
 
 #inicio, #contenidos {
     border-bottom: 1px solid #00A884;
-}
-
-#temario h5, #temarioDrop h5 {
-    color: #b8bdc1;
-    font-size: 20px;
 }
 
 #temario .tema, #temarioDrop .tema {
@@ -259,9 +254,9 @@ body {
     z-index: 9000 !important;
     cursor: default !important;
     position: absolute !important;
-    font-size: 100px;
-    width: 150px;
-    height: 150px;
+    font-size: 70px;
+    width: 120px;
+    height: 120px;
     background-color: #2b7162;
     border-radius: 50%;
 }
@@ -270,7 +265,7 @@ body {
     z-index: 9000 !important;
     width: 95%;
     height: 65vh;
-    top: 350px;
+    top: 320px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;

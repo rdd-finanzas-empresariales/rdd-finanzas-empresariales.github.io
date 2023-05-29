@@ -182,7 +182,7 @@ $(document).ready(function() {
     // Menu para celulares
 
     $("#menuDrag").css({
-        "top": $("html").scrollTop() + 200 + "px",
+        "top": $("html").scrollTop() + 150 + "px",
         "right": "0px"
     });
 
@@ -195,7 +195,7 @@ $(document).ready(function() {
     function onScroll() {
         if(isDragging) return;
         $("#menuDrag").css({
-            "top": $("html").scrollTop() + 200 + "px"
+            "top": $("html").scrollTop() + 150 + "px"
         });
         actualDraggabletop = $(this).css("top").replace("px", "");
     };
@@ -233,13 +233,13 @@ $(document).ready(function() {
     $("#menuDrag").click(function() {
         if($("#dragHamburguer").hasClass("d-block")) {
             $(this).animate({
-                "top": $("html").scrollTop() + 200 + "px"
+                "top": $("html").scrollTop() + 150 + "px"
             }, 300);
             $("#dragHamburguer").removeClass("d-block");
             $("#dragHamburguer").addClass("d-none");
             $("#dragCross").addClass("d-block");
             $("#dragCross").removeClass("d-none");
-            $("#menuDrop").css({"top": $("html").scrollTop() + 320 + "px"});
+            $("#menuDrop").css({"top": $("html").scrollTop() + 270 + "px"});
             // $('html, body, #principal, #tema, #contenido').css({
             //     "overflow-y": 'hidden',
             //     height: '100vh'

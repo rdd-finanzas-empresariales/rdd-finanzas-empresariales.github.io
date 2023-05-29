@@ -300,11 +300,13 @@ body {
         min-width: 100%;
         position: fixed !important;
         z-index: 9999;
-        height: 150px !important;
+        height: 100px !important;
     }
 
     #titulo h3 {
         display: block !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 
     #subtitulo {
@@ -323,7 +325,7 @@ body {
     #principal {
         min-width: 100%;
         height: auto !important;
-        padding-top: 150px !important;
+        padding-top: 100px !important;
         padding-bottom: 110px;
     }
 
@@ -389,6 +391,7 @@ body {
 
     #wrapperFechaCreative {
         max-width: 100% !important;
+        margin: 0px auto !important;
     }
 
     #fechaCreative, #logoCreative {

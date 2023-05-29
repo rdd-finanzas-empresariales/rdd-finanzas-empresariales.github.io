@@ -1,9 +1,11 @@
 $(document).ready(function() {
 
     var isDragging = false;
+    var actualDraggabletop;
 
     $("#menuDrag").css({
-        "top": "300px",
+        // "top": "300px",
+        "top": $("html").scrollTop() + 200 + "px",
         "right": "0px"
     });
 
@@ -15,6 +17,7 @@ $(document).ready(function() {
         $("#menuDrag").css({
             "top": $("html").scrollTop() + 300 + "px"
         });
+        actualDraggabletop = $(this).css("top").replace("px", "");
     };
 
     $("#menuDrag").draggable({
@@ -29,19 +32,42 @@ $(document).ready(function() {
             })
         },
         stop: function() {
+            actualDraggabletop = $(this).css("top").replace("px", "");
             isDragging = false;
             var horizontalLimit = window.innerWidth / 2;
             if($(this).position().left + $(this).width() > horizontalLimit) {
                 $(this).animate({
                     right: "auto",
-                    left: window.innerWidth - 100 + "px"
+                    left: window.innerWidth - $(this).width() + "px"
                 }, 300);
             } else {
                 $(this).animate({
                     right: "auto",
                     left: "0px"
                 }, 300);
+        
             }
+        }
+    });
+
+    $("#menuDrag").click(function() {
+        if($("#dragHamburguer").hasClass("d-block")) {
+            $(this).animate({
+                "top": $("html").scrollTop() + 200 + "px"
+            }, 300);
+            $("#dragHamburguer").removeClass("d-block");
+            $("#dragHamburguer").addClass("d-none");
+            $("#dragCross").addClass("d-block");
+            $("#dragCross").removeClass("d-none");
+        }
+        else {
+            $(this).animate({
+                "top": actualDraggabletop + "px"
+            }, 300);
+            $("#dragCross").removeClass("d-block");
+            $("#dragCross").addClass("d-none");
+            $("#dragHamburguer").addClass("d-block");
+            $("#dragHamburguer").removeClass("d-none");
         }
     });
 

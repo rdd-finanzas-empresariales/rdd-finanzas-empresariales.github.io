@@ -260,6 +260,10 @@ body {
 
 @media(max-width: 1300px) {
 
+    #menuDrag {
+        display: block !important;
+    }
+
     #titulo {
         min-width: 100%;
         position: fixed !important;

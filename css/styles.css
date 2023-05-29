@@ -255,7 +255,11 @@ body {
         min-width: 100%;
         position: fixed !important;
         z-index: 9999;
-        height: 140px !important;
+        height: 150px !important;
+    }
+
+    #titulo h3 {
+        display: block !important;
     }
 
     #subtitulo {
@@ -275,10 +279,13 @@ body {
         min-width: 100%;
         height: auto !important;
         padding-top: 150px !important;
+        padding-bottom: 110px;
     }
 
     #principal #tema {
         height: auto !important;
+        min-height: 2000px !important;
+        overflow-wrap: break-word !important;
     }
 
     html, body {
@@ -286,10 +293,125 @@ body {
         height: auto !important;
     }
 
-    #creative-commons {
-        padding-bottom: 10px !important;
-        min-height: 100px !important;
+    #titulo h3 {
+        text-align: center;
+        font-size: 1.8vh;
     }
 
+    #tema p,
+    #tema ul,
+    #tema ol,
+    #tema a,
+    #tema figcaption,
+    #tema button,
+    #tema .opcion i,
+    #buscador i,
+    #tema #buscador input[type="text"],
+    #tema table {
+        font-size: 1.7vh;
+    }
+
+    #tema .wrapperBuscador {
+        min-width: 100% !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #tema .wrapperBotonesEvaluacion {
+        padding-top: 30px !important;
+        min-width: 100% !important;
+    }
+
+    .opcion {
+        min-width: 100% !important;
+    }
+
+    #tema h1 {
+        font-size: 2vh;
+    }
+
+    #tema h2 {
+        font-size: 1.85vh;
+    }
+
+    #creative-commons {
+        padding-bottom: 10px !important;
+        font-size: 1.5vh;
+        height: fit-content !important;
+        overflow: hidden !important;
+    }
+
+    #fechaCreative, #logoCreative {
+        text-align: center !important;
+        min-width: 1000px !important;
+        max-width: 1000px !important;
+        width: 1000px !important;
+    }
+
+    #logoCreative img {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        min-width: 200px !important;
+    }
+
+    #wrapperContactos {
+        display: block !important;
+    }
+
+    .contactoInfo {
+        display: block !important;
+        min-width: 100% !important;
+        margin-top: 100px !important;
+        margin-bottom: 100px !important;
+    }
+
+    table,
+    figure img,
+    .figure {
+        min-width: 100% !important;
+    }
+
+    #hiddenFinanzas {
+        height: 50px !important;
+    }
+
+    .wrapperApoyo {
+        display: block !important;
+        min-width: 100% !important;
+    }
+
+    .wrapperApoyo .botonImagen {
+        display: block !important;
+        margin: 0px auto !important;
+    }
+
+}
+
+@media(max-width: 1000px) {
+
+    .botonImagen {
+        min-width: 35% !important;
+    }
+
+    .wrapperConcepto {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    .botonImagen {
+        min-width: 40% !important;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .botonImagen {
+        min-width: 70% !important;
+    }
 
 }

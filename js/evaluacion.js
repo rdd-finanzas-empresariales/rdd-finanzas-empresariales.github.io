@@ -17,12 +17,12 @@ $(document).ready(function() {
 
             $("#evaluacion").append(`
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-8 wrapperBuscador">
                         <div id="buscador">
                             <input id="nombreCompleto" class="form-control" type="text" placeholder="Ingresa tu nombre completo" />
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 wrapperBuscador">
                         <div id="buscador">
                             <input id="grupo" class="form-control" type="text" placeholder="Ingresa tu grupo" />
                         </div>
@@ -45,7 +45,7 @@ $(document).ready(function() {
                     opciones += `
                         <div id="o-${ejercicio["numPregunta"]}-${index2 + 1}" class="col-10 py-3 d-block mx-auto opcion row d-flex" onclick="seleccionarOpcion(this)">
                             <div class="col-11">
-                                ${opcion}
+                                <p>${opcion}</p>
                             </div>
                             <div class="col-1 align-self-center text-center no-imprimir palomita d-none">
                                 <i class="fa-solid fa-check"></i>
@@ -77,7 +77,7 @@ $(document).ready(function() {
             $("#evaluacion").append("<hr class='no-imprimir' />");
 
             $("#evaluacion").append(`
-                <div class="col-8 d-block mx-auto mt-4">
+                <div class="col-8 d-block mx-auto mt-4 wrapperBotonesEvaluacion">
                     <div class="row justify-content-around">
                         <button onclick="calificar()" class="btn btn-primary no-imprimir">Verificar respuestas</button>
                         <button id="botonImprimir" onclick="imprimirDiv()" class="btn btn-success d-none no-imprimir">Imprimir</button>

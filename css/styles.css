@@ -249,10 +249,47 @@ body {
     color: #F15C6D;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1300px) {
 
-    body {
-        background-color: red !important;
+    #titulo {
+        min-width: 100%;
+        position: fixed !important;
+        z-index: 9999;
+        height: 140px !important;
     }
+
+    #subtitulo {
+        display: none !important;
+    }
+
+    #titulo h3 {
+        color: black !important;
+    }
+
+    #temario {
+        min-width: 100%;
+        display: none !important;
+    }
+
+    #principal {
+        min-width: 100%;
+        height: auto !important;
+        padding-top: 150px !important;
+    }
+
+    #principal #tema {
+        height: auto !important;
+    }
+
+    html, body {
+        overflow: auto !important;
+        height: auto !important;
+    }
+
+    #creative-commons {
+        padding-bottom: 10px !important;
+        min-height: 100px !important;
+    }
+
 
 }

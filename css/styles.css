@@ -27,20 +27,20 @@ body {
     font-size: 35px;
 }
 
-#temario {
+#temario, #temarioDrop {
     background-color: #121b22;
     border-right: 2px solid #2c3b42;
     height: 85vh;
     overflow-y: auto;
 }
 
-#temario h4 {
+#temario h4, #temarioDrop h4 {
     color: #b8bdc1;
     font-size: 22px;
     font-weight: bold;
 }
 
-#temario .toggle-plus i {
+#temario .toggle-plus i, #temarioDrop .toggle-plus i {
     font-size: 25px;
 }
 
@@ -48,22 +48,22 @@ body {
     border-bottom: 1px solid #00A884;
 }
 
-#temario h5 {
+#temario h5, #temarioDrop h5 {
     color: #b8bdc1;
     font-size: 20px;
 }
 
-#temario .tema {
+#temario .tema, #temarioDrop .tema {
     border-bottom: 2px solid #2c3b42;
     transition: all 300ms;
 }
 
-#temario .tema:hover {
+#temario .tema:hover, #temarioDrop .tema:hover {
     background-color: #2b7162;
     cursor: pointer;
 }
 
-#temario .selected {
+#temario .selected, #temarioDrop .selected {
     background-color: #2b7162;
 }
 
@@ -253,15 +253,42 @@ body {
     z-index: 9000 !important;
     cursor: default !important;
     position: absolute !important;
-    font-size: 2vh;
+    font-size: 40px;
+    width: 90px;
+    height: 90px;
     background-color: #2b7162;
     border-radius: 50%;
+}
+
+#menuDrop {
+    z-index: 9000 !important;
+    width: 95%;
+    height: 70vh;
+    top: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: none;
+    background-color: #121B22;
+    border-radius: 10px;
+    border: 1px solid #00A884;
 }
 
 @media(max-width: 1300px) {
 
     #menuDrag {
         display: block !important;
+    }
+
+    #menuDrop #temarioDrop {
+        display: block !important;
+        z-index: 9500 !important;
+        height: 100%;
+        min-width: 100%;
+    }
+
+    #menuDrop #temarioDrop #inicio {
+        display: none !important;
     }
 
     #titulo {
@@ -318,6 +345,7 @@ body {
     #tema figcaption,
     #tema button,
     #tema .opcion i,
+    #menuDrop h4,
     #buscador i,
     #tema #buscador input[type="text"],
     #tema table {

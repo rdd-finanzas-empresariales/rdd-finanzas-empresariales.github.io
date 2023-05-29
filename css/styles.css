@@ -249,6 +249,15 @@ body {
     color: #F15C6D;
 }
 
+#menuDrag {
+    z-index: 9000 !important;
+    cursor: default !important;
+    position: absolute !important;
+    font-size: 2vh;
+    background-color: #2b7162;
+    border-radius: 50%;
+}
+
 @media(max-width: 1300px) {
 
     #titulo {

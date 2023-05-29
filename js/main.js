@@ -1,5 +1,50 @@
 $(document).ready(function() {
 
+    var isDragging = false;
+
+    $("#menuDrag").css({
+        "top": "300px",
+        "right": "0px"
+    });
+
+    $(document.body).on('touchmove', onScroll);
+    $(window).on('scroll', onScroll); 
+
+    function onScroll() {
+        if(isDragging) return;
+        $("#menuDrag").css({
+            "top": $("html").scrollTop() + 300 + "px"
+        });
+    };
+
+    $("#menuDrag").draggable({
+        scroll: false,
+        containment: "#principal",
+        snap: "#principal",
+        start: function(){
+            isDragging  = true;
+            $(this).css({
+                'right':"auto",
+                'left': 'auto',
+            })
+        },
+        stop: function() {
+            isDragging = false;
+            var horizontalLimit = window.innerWidth / 2;
+            if($(this).position().left + $(this).width() > horizontalLimit) {
+                $(this).animate({
+                    right: "auto",
+                    left: window.innerWidth - 100 + "px"
+                }, 300);
+            } else {
+                $(this).animate({
+                    right: "auto",
+                    left: "0px"
+                }, 300);
+            }
+        }
+    });
+
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const tema = urlParams.get('tema') ?? "introduccion";

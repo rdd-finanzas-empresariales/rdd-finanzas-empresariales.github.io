@@ -29,8 +29,8 @@ $(document).ready(function() {
                     </div>
                 </div>
                 <div id="divCalificacion" class="row d-none">
-                    <div class="col-4 offset-8">
-                        <h2 class="text-right mr-5">Calificación: <span id="calificacion"></span></h2>
+                    <div class="col-12">
+                        <h2 class="text-right">Calificación: <span id="calificacion"></span></h2>
                     </div>
                 </div>
                 <hr />
@@ -132,9 +132,16 @@ function calificar() {
     $("#divCalificacion").removeClass("d-none");
     $("#botonImprimir").removeClass("d-none");
 
-    $('#tema').animate({
-        scrollTop: 0
-    }, 1000);
+    if(window.innerWidth <= 1300) {
+        $('html').animate({
+            scrollTop: 0
+        }, 1000);
+    } else {
+        $('#tema').animate({
+            scrollTop: 0
+        }, 1000);
+    }
+
 
 }
 
@@ -159,10 +166,16 @@ function verificarRespuestas() {
     if(primeraSinResponder == 0) return true;
 
     id = primeraSinResponder.attr("id");
-    
-    $('#tema').animate({
-        scrollTop: $("#" + id).get(0).offsetTop - 20
-    }, 1000);
+
+    if(window.innerWidth <= 1300) {
+        $('html').animate({
+            scrollTop: $("#" + id).get(0).offsetTop - 20
+        }, 1000);
+    } else {
+        $('#tema').animate({
+            scrollTop: $("#" + id).get(0).offsetTop - 20
+        }, 1000);
+    }
 
     return false;
 
